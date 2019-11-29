@@ -1,4 +1,4 @@
-# Gmail Filter
+# Gmail Filter Manager
 
 A tool written in javascript to help you manage your gmail filters out of gmail
 
