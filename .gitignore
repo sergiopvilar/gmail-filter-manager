@@ -1,5 +1,6 @@
-lists/*.txt
-lists/*.json
+lists/archive_filters.txt
+lists/delete_filters.txt
+lists/filters.json
 output/*.xml
 node_modules
 .env
