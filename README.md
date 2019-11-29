@@ -41,6 +41,8 @@ You can manage new filters by using email lists in the `/lists` directory:
 - `delete.txt`: list of emails that will be deleted
 - `archive.txt`: lisf of emails that will be ignored from the inbox and have the custom label applied
 
+The lists are expected to have one valid email per line.
+
 ### Updating Mail Lists
 
 It will be hard to keep your filters updated once you have imported everything, so in order to do that you can use
