@@ -1,0 +1,20 @@
+{
+  "name": "gmail-filter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.0.1",
+    "glob": "^7.1.6",
+    "underscore": "^1.9.1",
+    "xml2js": "^0.4.22"
+  },
+  "scripts": {
+    "index": "node --experimental-modules index.js",
+    "input": "node --experimental-modules input.js",
+    "clear": "rm output/*.xml",
+    "start": "yarn run clear;yarn run input; yarn run index"
+  }
+}

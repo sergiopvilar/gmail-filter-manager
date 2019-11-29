@@ -1,0 +1,5 @@
+lists/*.txt
+lists/*.json
+output/*.xml
+node_modules
+.env

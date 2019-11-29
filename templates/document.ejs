@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns='http://www.w3.org/2005/Atom' xmlns:apps='http://schemas.google.com/apps/2006'>
+  <title>Mail Filters</title>
+  <id>tag:mail.google.com,2008:filters:1477260850913,1477260851453,z0000001574866687512*5936420472187507841</id>
+  <updated>2019-11-27T15:23:13Z</updated>
+  <author>
+    <name>Sérgio Vilar</name>
+    <email>sergiovilar.r@gmail.com</email>
+  </author>
+  <% for(var i in entries){ %>
+    <entry>
+      <category term='filter'></category>
+      <title>Mail Filter</title>
+      <id>tag:mail.google.com,2008:filter:z0000001574866687512*5936420472187507841</id>
+      <updated>2019-11-27T15:23:13Z</updated>
+      <content></content><% if (typeof entries[i] === 'string') { %>
+      <apps:property name='from' value='<%=entries[i]%>' />
+      <apps:property name='to' value='-sergiovilar.r+prioridade@gmail.com' />
+        <% Object.keys(actions).forEach(function(key){ %><apps:property name='<%=key%>' value='<%=actions[key]%>' />
+        <% }) %><apps:property name='sizeOperator' value='s_sl' />
+      <apps:property name='sizeUnit' value='s_smb' />
+      <% } %><% if (typeof entries[i] === 'object'){ %><% entries[i].forEach((entry) => { %>
+      <apps:property name='<%=entry.name%>' value='<%=entry.value%>' /><% }) %><% } %>
+    </entry>
+  <% } %>
+</feed>
