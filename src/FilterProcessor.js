@@ -88,4 +88,11 @@ export default class FilterProcessor {
     this.processList('filters', this.customFilters, false)
   }
 
+  copy(list, file) {
+    if(list.entries.length === 0) return
+
+    fs.appendFileSync(file, `\n${list.entries.join("\n")}`)
+    fs.writeFileSync(list.file, '', 'utf-8')
+  }
+
 }
