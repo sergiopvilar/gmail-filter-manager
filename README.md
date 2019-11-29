@@ -53,7 +53,7 @@ and not the whole list. The new emails will be added to the respective `delete.t
 
 ## Running
 
-To conver your mail lists into filter files you'll need to run:
+To convert your mail lists into filter files you'll need to run:
 
 ```yarn start```
 
